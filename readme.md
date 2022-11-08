@@ -7,3 +7,4 @@
 3. git push origin main
 
 - Para crear repositorio seguir las indicaciones de cuando se crea el repositorio en github.
+- Actualizado 8/11
