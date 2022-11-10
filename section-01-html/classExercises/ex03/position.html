@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+
+
+.container {
+    position: relative;
+    width: 80%;
+    height: 550px;
+    background: #f4f4f4;
+}
+
+.box {
+    width: 200px;
+    height: 150px;
+}
+
+div:nth-child(1) {
+    position: absolute;
+    background-image: url(./images/descarga.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(./images/mapache.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url(./images/pantera.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div:nth-child(4){
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url(./images/tucan.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </section>
+</body>
+</html>

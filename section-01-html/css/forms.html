@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: "Roboto", Helvetica, Arial, sans-serif;
+font-weight: 100;
+font-size: 12px;
+line-height: 30px;
+color: #777;
+background: #21618C
+}
+
+.container {
+max-width: 400px;
+width: 100%;
+margin: 0 auto;
+position: relative;
+}
+
+#contact {
+background: #F9F9F9;
+padding: 25px;
+margin: 150px 0;
+box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h3 {
+display: block;
+font-size: 30px;
+font-weight: 300;
+margin-bottom: 10px;
+}
+
+#contact h4 {
+margin: 5px 0 15px;
+display: block;
+font-size: 13px;
+font-weight: 400;
+}
+
+fieldset {
+border: medium none !important;
+margin: 0 0 10px;
+min-width: 100%;
+padding: 0;
+width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="date"],
+#contact input[type="number"],
+#contact input[type="password"],
+#contact input[type="file"] {
+width: 100%;
+border: 1px solid #ccc;
+background: #FFF;
+margin: 0 0 5px;
+padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="date"]:hover,
+#contact input[type="number"]:hover,
+#contact input[type="password"]:hover,
+#contact input[type="file"]:hover {
+transition: border-color 0.3s ease-in-out;
+border: 1px solid #aaa;
+}
+
+#contact button[type="submit"] {
+cursor: pointer;
+width: 100%;
+border: none;
+background: #21618C;
+color: #FFF;
+margin: 0 0 5px;
+padding: 10px;
+font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+background: #21618C;
+transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus{
+outline: 0;
+border: 1px solid #aaa;
+}
+    </style>
+</head>
+<body>
+    <div class="container">  
+        <form id="contact" action="" method="post">
+            <h3>Registration form</h3>
+            <h4>Front End Noviembre 07</h4>
+            <fieldset>
+            <input placeholder="Nombre" type="text" id="formName"  required autofocus>
+            </fieldset>
+            <fieldset>
+            <input placeholder="Fecha de Nacimiento" type="date" id="dayBirth" required autofocus>
+            </fieldset>
+            <fieldset>
+            <input placeholder="Edad" type="number" id="formAge" required autofocus>
+            </fieldset>
+            <fieldset>
+            <input placeholder="Email" type="email" id="formEmail" required>
+            </fieldset>
+            <fieldset>
+            <input placeholder="Password" type="password" maxlength="15" id="formPass" required>
+            </fieldset>
+            <fieldset>
+            <input placeholder="Tarjeta" type="text" maxlength="16" id="formTarget" required>
+            </fieldset>
+            <fieldset>
+            <input placeholder="Color Favorito" type="text" id="formColour" required>
+            </fieldset>
+            <fieldset>
+            <input placeholder="Direccion" type="text" id="formAdress" required>
+            </fieldset>
+            <fieldset>
+            <input placeholder="Archivo" type="file" id="formFile" required>
+            </fieldset>
+            <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Enviar</button>
+            </fieldset> 
+        </form>
+        </div>
+
+        <script>
+            //Example Form
+            exampleForm.onsubmit = (e) => {
+              e.preventDefault();
+              let name = document.querySelector("#formName").value;
+              console.log(`Hello ${name}`);
+              alert(`Hello ${name}`);
+            };
+      
+            // Display number value on the input field type "RANGE"
+             const updateTextInput = (val) => {
+               document.getElementById("textInput").value = val;
+             };
+      
+            // Band Information Form
+            contact.onsubmit = (e) => {
+               e.preventDefault();
+      
+              let formName = document.querySelector("#formName").value;
+              let dayBirth = document.querySelector("#dayBirth").value;
+              let formAge = document.querySelector("#formAge").value;
+              let formEmail = document.querySelector("#formEmail").value;
+              let formPass = document.querySelector("#formPass").value;
+              let formTarget = document.querySelector("#formTarget").value;
+              let formColour = document.querySelector("#formColour").value;
+              let formAdress = document.querySelector("#formAdress").value;
+              let formFile = document.querySelector("#formFile").value;
+              
+            //   let bandGenre = document.querySelector("#bandGenre").value;
+            //   let setTimeRadio = Array.from(
+            //     document.getElementsByName("setTimes")
+            //   ).find((time) => time.checked).value;
+      
+              if (formName === "") {
+                alert("Please Submit a valid form");
+              } else {
+                alert(`
+              !!SUCCESS!!
+              We have registered your correctly, we will send you an email shortly with more details of your subcription!.
+              Let´s Gooooooooooo!
+              Name: ${formName}
+              Date of Birth: ${dayBirth}
+              Email: ${formEmail}
+              Favorite Colour: ${formColour}
+              `);
+              };
+      
+            // Display shoe size outside of form submit function
+            // const shoeSizeInput = (val) => {
+            //   document.getElementById("shoeSize").value = val;
+            // };
+      
+            // Ecommerce Form
+          </script>
+</body>
+</html>
