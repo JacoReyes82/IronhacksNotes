@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+html,body,h2{
+  margin:0;
+  padding:0;
+}
+h2{
+  text-align: center;
+}
+body{
+  background: #eee;
+  font-family: sans-serif;
+  color: #333;
+}
+.fila{
+  width: 90%;
+  margin: 2% auto;
+  overflow: hidden;
+}
+.columna{
+  background: lightblue;
+  float: left;
+  margin-right: 2%;
+  box-sizing: border-box;
+  padding: 1em;
+  overflow: hidden;
+}
+/*POR DEBAJO DE 480PX UNA COLUMNA*/
+.columna{
+  width:100%;
+  background: orange;
+}
+
+
+
+  /*12 COLUMNAS SON TRES EN MAYOR A 1024PX*/
+  .doce_columnas .columna{
+    width: 6.5%;
+  }
+  .doce_columnas .columna:nth-child(3n){
+    margin-right: 2%;
+  }
+  .doce_columnas .columna:nth-child(4n){
+    margin-right: 2%;
+  }
+  .doce_columnas .columna:nth-child(12n){
+    margin-right: 0;
+  }
+/*Fin @media 1024PX*/
+
+
+    </style>
+
+
+
+</head>
+<body>
+ 
+   <div class="fila doce_columnas">
+     <div class="columna">
+       <h2 class="title">1</h2>
+     </div>
+     <div class="columna">
+       <h2 class="title">2</h2>
+     </div>
+     <div class="columna">
+       <h2 class="title">3</h2>
+     </div>
+     <div class="columna">
+       <h2 class="title">4</h2>
+     </div>
+     <div class="columna">
+       <h2 class="title">5</h2>
+     </div>
+     <div class="columna">
+       <h2 class="title">6</h2>
+     </div>
+     <div class="columna">
+       <h2 class="title">7</h2>
+     </div>
+     <div class="columna">
+       <h2 class="title">8</h2>
+     </div>
+     <div class="columna">
+       <h2 class="title">9</h2>
+     </div>
+     <div class="columna">
+       <h2 class="title">10</h2>
+     </div>
+     <div class="columna">
+       <h2 class="title">11</h2>
+     </div>
+     <div class="columna">
+       <h2 class="title">12</h2>
+     </div>
+   </div>
+   </div>
+ </body>
+</html>
